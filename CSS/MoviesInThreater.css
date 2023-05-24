@@ -1,0 +1,262 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.main{
+    padding-top:6.5rem;
+}
+.heading h3{
+    word-spacing:2px;
+    font-weight:700;
+    color:rgb(17, 79, 120);
+    position:relative;
+}
+.heading h3::after{
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    content:'';
+    height:3px;
+    width:200px;
+    background-color:#c92c2c;
+}
+.main-content ul li{
+    border-bottom:2px solid #e0e0e0;
+    padding-bottom:10px;
+    width:100%;
+}
+.movie-img{
+    width:20%;
+    height:200px;
+}
+.movie-img img{
+    width:100%;
+    height:100%;
+}
+.movie-details{
+    height:auto;
+    width:80%;
+}
+.movie-details a{
+    text-decoration:none;
+    color:black;
+}
+.upper-section h5{
+    font-size:25px;
+}
+.metascore{
+    height:2em;
+    width:2em;
+    text-align:center;
+    vertical-align:middle;
+    color:#fff;
+    font-size:25px;
+    border-radius:6px;
+    line-height:2em;
+}
+.green{
+    background-color:#6c3;
+}
+.movie-details .overview{
+    text-align: justify;
+    font-size:18px;
+    margin-top:10px !important;
+}
+.tm-side{
+    background-color:rgb(237 248 255);
+    margin-bottom:10px;
+}
+.tm-side-content h5{
+    font-size:20px;
+    padding:20px;
+    text-align:center;
+    font-weight:600;
+}
+.movie-title{
+    width:50%;
+}
+.release-date{
+    width:70%;
+}
+.movie-title a:hover{
+    font-size:20px;
+}
+.tm-side-img img{
+    width:100%;
+}
+.tm-side a{
+    text-decoration:none;
+    color:black;
+}
+
+
+
+
+
+@media only screen and (max-width: 1396.36px){
+    .metascore{
+        font-size:22px;
+    }
+}
+@media only screen and (max-width: 1228.80px){
+    .main h3{
+        font-size:1.20rem;
+    }
+    .main h5{
+        font-size:17px;
+    }
+    .main-content.mt-5 {
+        margin-top: 2rem !important;
+    }
+    .main p{
+        font-size:15px;
+    }
+    .movie-details .overview {
+        font-size: 16px;
+    }
+    .metascore{
+        font-size:20px;
+    }
+    .movie-img{
+        height:170px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .main h3{
+        font-size:1.25rem;
+    }
+    .main h5{
+        font-size:1rem;
+    }
+    .movie-img{
+        height:170px;
+    }
+    .main p{
+        font-size:14px;
+    }
+    .movie-details .overview {
+        font-size: 15px;
+    }
+    .metascore{
+        font-size:20px;
+    }
+    .movie-title a{
+        font-size:15px;
+    }
+    .movie-title a:hover{
+        font-size:17px;
+    }
+}
+@media only screen and (max-width: 877.71px){
+    .main{
+        padding-top:5.02rem;
+    }
+    .main h3 {
+        font-size: 18px;
+    }
+    .heading h3::after{
+        bottom:-5px;
+        height:2px;
+    }
+    .main-content.mt-5 {
+        margin-top: 1rem !important;
+    }
+    .movie-img {
+        width:18%;
+        height: 150px;
+    }
+    .metascore {
+        font-size: 16px;
+    }
+    .main h5 {
+        font-size: 0.90rem;
+    }
+    .main p {
+        font-size: 12px;
+    }
+    .movie-details .overview {
+        font-size: 12px;
+    }
+    .tm-side-content {
+        text-align: center; 
+     }
+    .tm-side-img img {
+        width: 50%;
+    }
+    .upcoming-movies .list-unstyled {
+        margin-left: 25%;
+        width: 50%;
+    }
+    .movie-title{
+       width:50%;
+        text-align:left;
+    }
+    .release-date {
+        width: 50%;
+        text-align:left;
+    }
+}
+@media only screen and (max-width: 768px){
+    .main{
+        padding-top:3.5rem;
+    }
+    .main h3 {
+        font-size: 16px;
+    }
+    .main h3::after{
+        width:150px;
+        height:1.8px;
+    }
+    .metascore {
+        font-size: 14px;
+    }
+    .movie-img {
+        width: 15%;
+        height: 130px;
+    }
+    .movie-details {
+        height: auto;
+        width: 83%;
+    }
+    .main h5 {
+        font-size: 0.80rem;
+    }
+    .main p {
+        font-size: 9px;
+    }
+    .movie-details .overview {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 614.40px){
+    .main{  
+        padding-top: 3.2rem;
+        }
+    .main h3 {
+        font-size: 14px;
+    }
+    .main h5 {
+        font-size: 12px;
+    }    
+    .main p {
+        font-size: 8px;
+    }
+    .movie-img{
+        height:100px;
+    }
+    .metascore {
+        font-size: 12px;
+        border-radius:3px;
+    }
+    .movie-details .overview {
+        font-size: 8px;
+    }
+    .movie-title a{
+        font-size:10px;
+    }
+    .movie-title a:hover{
+        font-size:12px;
+    }
+    .main-content ul li{
+        border-width: 1px;
+    }
+}

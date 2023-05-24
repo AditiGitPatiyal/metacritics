@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>MOVIES REVIEW</title>
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/movies.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ </head>
+ <body>
+  <header class="container-fluid fixed-top" style="background-color:rgb(17, 79, 120)">
+    <nav class="navbar main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/logo1.png" class="img-fluid logo" alt="Logo">
+            </a>
+            <div class="search">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <form>
+                        <div class="search d-flex">
+                            <input type="search"name="search" id="search" class="form-control" placeholder="Search....">
+                            <span class="search-btn"><button type="submit" style="border:none;"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                        </div>   
+                    </form>    
+                </li>
+            </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html" role="button">MOVIES</a>  
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="webseries.html" role="button">WEB SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">NEWS</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="login-register">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <span data-bs-toggle="modal" data-bs-target="#login-modal" >
+                            <a class="nav-link">LOGIN</a>
+                        </span>
+                    </li>
+                    <li class="nav-item"><a class="nav-link">|</a></li>
+                    <li class="nav-item">
+                        <span data-bs-toggle="modal" data-bs-target="#register-modal">
+                           <a class="nav-link">SIGNUP</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  
+  <div class="modal" id="login-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h1 class="modal-title"><span style="border-bottom:3px solid red">LOG</span>IN</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form action="">
+                <div class="form-floating mb-3 mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-floating mt-3 mb-3">
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                  <label for="pwd">Password</label>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="check1" name="remember-me" value="something">
+                    <label class="form-check-label" for="check1">Remember me</label>
+                </div>
+                <div class="mb-1">
+                <button type="submit" class="btn">LOGIN</button>
+                </div>
+            </form>
+                <div class="mb-1 forgot-password">
+                <a href="#" class="text-primary">Forgot password ?</a>
+                </div>
+                <p class="text-muted pb-4">Don't have any account yet?<span data-bs-toggle="modal" data-bs-target="#register-modal" style="color:rgb(17, 79, 120);"><strong>Signup Now</strong></span></p>
+         </div>
+        </div>
+    </div>
+</div>
+<!-- The Modal -->
+<div class="modal" id="register-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h1 class="modal-title"><span style="border-bottom:3px solid red;">SIGN</span>UP</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-floating mb-3 mt-3">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                      <label for="pwd">Password</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <label for="pwd">Re-type Password</label>
+                      </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="check1" name="remember-me" value="something">
+                        <label class="form-check-label" for="check1">Remember me</label>
+                    </div>
+                    <div class="mb-1">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+     </div>
+</div>
+</div>
+    <div class="filter container-fluid" style="background-image: url('images/slider-bg2.jpg');">
+        <div class="filter-content container py-4 ">
+            <div class="row justify-content-center">
+             <div class="col-sm-8">   
+            <h6 class="text-light">ADVANCED FILTER</h6>
+            </div>
+            </div>
+                <form class="mt-2">
+                    <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <label for="genre" class="form-label text-light">GENRE</label>
+                        <select class="form-select" id="genre" name="gener">
+                            <option>ALL</option>
+                            <option>ACTION</option>
+                            <option>SCI-FI</option>
+                            <option>HISTORICAL</option>
+                            <option>DRAMA</option>
+                            <option>ROMANCE</option>
+                            <option>HORROR</option>
+                          </select>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <label for="language" class="form-label text-light">LANGUAGE</label>
+                        <select class="form-select" id="language" name="language">
+                            <option>ANY</option>
+                            <option>HINDI</option>
+                            <option>ENGLISH</option>
+                            <option>PUNJABI </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <label for="year" class="form-label text-light">YEAR</label>
+                        <select class="form-select" id="year" name="year">
+                            <option>ANY</option>
+                            <option>2023</option>
+                            <option>2022</option>
+                            <option>2021</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                            <option>2017</option>
+                            <option>2016</option>
+                            <option>2015</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-2">
+                        <button type="submit" class="btn text-light" style="background-color:rgb(17, 79, 120);margin-top:30px;">SEARCH</button>
+                    </div>
+                    </div>
+               </form>  
+        </div>
+    </div>
+    <div class="main container-fluid">
+        <div class="movielist container pt-4">
+        <h2><span style="border-bottom:3px solid rgb(17, 79, 120);">ALL MO</span>IVES</h2>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="flex-wrap-movies d-flex">
+                    <div class="movie-item me-4 mb-4">
+                    <a href="#">
+                      <img src="images/all-movie-1.jpg">
+                      <div class="all-moviedetails pt-2">
+                        <h6 class="m-0">K.G.F Chapter-2</h6>
+                        <p class="text-muted m-0 year">2022</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-2.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Dangal</h6>
+                            <p class="text-muted m-0 year">2016</p>
+                        </div>
+                        </a>
+                     </div>
+                     <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/punjabi-movie2.webp">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Bajre Da Sitaa</h6>
+                            <p class="text-muted m-0 year">2022</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4">
+                        <a href="#">
+                          <img src="images/all-movie-3.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Bajrangi Bhaijaan</h6>
+                            <p class="text-muted m-0 year">2015</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-4.jpeg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">RRR</h6>
+                            <p class="text-muted m-0 year">2022</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-eng-1.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">All Quiet on the Western Front</h6>
+                            <p class="text-muted m-0 year">2022</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-hindi-5.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Sooryavanshi</h6>
+                            <p class="text-muted m-0 year">2021</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movies-eng-3.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Cherry</h6>
+                            <p class="text-muted m-0 year">2023</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-hindi-6.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Super 30</h6>
+                            <p class="text-muted m-0 year">2019</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/punjabi-movie1.webp">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Moh</h6>
+                            <p class="text-muted m-0 year">2022</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movies-hindi-7.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Padmaavat</h6>
+                            <p class="text-muted m-0 year">2018</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movie-hindi-8.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Ponniyan Selevan</h6>
+                            <p class="text-muted m-0 year">2023</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movies-hindi-9.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">IB-71</h6>
+                            <p class="text-muted m-0 year">2023</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/punjabi-movie3.webp">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Teeja Punjab</h6>
+                            <p class="text-muted m-0 year">2021</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movies-hindi-10.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">Bhediya</h6>
+                            <p class="text-muted m-0 year">2022</p>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="movie-item me-4 mb-4">
+                        <a href="#">
+                          <img src="images/all-movies-eng-2.jpg">
+                          <div class="all-moviedetails pt-2">
+                            <h6 class="m-0">The Super Mario Bros</h6>
+                            <p class="text-muted m-0 year">2023</p>
+                          </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item"><a class="page-link" href="movies.html">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="movies.html">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="movies-page2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="movies.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="movies.html">Next</a></li>
+                  </ul>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ </body>
+</html>

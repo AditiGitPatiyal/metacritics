@@ -1,0 +1,649 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.banner{
+    padding:6rem 0 2rem;
+}
+.col-md-9.col-sm-12.img-add img {
+    width: 100%;
+}
+.movie-img{
+    height:550px;
+}
+.movie-img img{
+    width:100%;
+    height:80%;
+}
+.main-content .trailer button{
+    color:white;
+    background-color:rgb(17,79,120);
+    padding:20px 50px;
+    width:100%;
+    font-size:1.25rem;
+}
+.main-content button:hover{
+    background-color:white;
+    color:rgb(17, 79, 120);
+}
+#watch-trailer .modal-dialog {
+    max-width: 1000px !important;
+    margin: 2.75rem auto !important;
+}
+.content{
+    background-color:rgb(237 248 255);
+    border-radius:10px;
+    padding:0 !important;
+    padding:25px 20px !important;
+   /* box-shadow: 0px 30px 40px -20px rgb(17,79,120);*/
+}
+.main-content h1{
+    font-size:30px;
+    font-weight:600;
+}
+.green{
+    background-color:#6c3;
+}
+.user-rating{
+    width:2em;
+    height:2em;
+    text-align:center;
+    vertical-align:middle;
+    color:#fff;
+    font-size:25px;
+    border-radius:50%;
+    line-height:2em;
+}
+.metascore{
+    height:2em;
+    width:2em;
+    text-align:center;
+    vertical-align:middle;
+    color:#fff;
+    font-size:25px;
+    border-radius:6px;
+    line-height:2em;
+}
+.score{
+    width:70%;
+    position:relative;
+}
+.score h5{
+    font-size:20px; 
+    margin:0; 
+}
+.score a{
+    text-decoration:none;
+}
+.score::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: rgb(17,79,120);
+    margin: 0px 0 0 0px;
+    bottom: -20px;
+    width: 495px;
+    left: 0px;
+}
+.rating h5{
+    font-weight:500;
+    margin-top:30px;
+}
+.rating1{
+    width:100%;
+    justify-content: space-around;
+}
+.rating button{
+    background-color:rgb(17,79,120);
+    color:white;   
+}
+
+.single-movie-info{
+    background-color:rgb(237 248 255);
+    border-radius:10px;
+    padding:20px 30px !important;
+}
+.single-movie-info h5{
+    font-size:20px;
+    font-weight:600;
+    
+    position:relative;
+}
+.single-movie-info h5::after{
+    position:absolute;
+    bottom:-7px;
+    content: "";
+    height: 3px;
+    background-color:#c92c2c;
+    margin: 0px 0 0 0px;
+    width: 100px;
+    left: 0px;
+}
+.single-movie-info p{
+    margin-top:2rem;
+    font-size:17px;
+    text-align: justify;
+}
+.genre h6{
+    font-size:20px;
+    font-weight:600;
+}
+.info h6{
+    font-size:20px;
+    font-weight:600;
+    margin-top:1rem;
+}
+.side{
+    border:2px solid #f0f3f5;
+    width:100% !important;
+}
+.side ul.top{
+    background-color:rgb(237 248 255);
+    border-bottom:2px solid #f0f3f5;
+}
+.side ul.top li{
+    font-size:20px;
+    font-weight:500;
+    padding:10px 20px;
+    text-align: center;
+}
+
+.side li.list.\.active {
+    background-color:rgb(17, 79, 120);
+    color:white;
+}
+.side button{
+    background-color:rgb(237 248 255);
+    border:none;
+    color:rgb(17, 79, 120);
+}
+.upcoming-movies h5{
+    color:rgb(17,79,120);
+    font-size:20px;
+    font-weight:600;
+}
+.movie-title{
+    width:50%;
+}
+.release-date{
+    width:70%;
+}
+.movie-title a:hover{
+    font-size:20px;
+}
+.movie-title a{
+    text-decoration: none;
+    color:black;
+    font-weight:bold;
+}
+.ad img{
+    width:100%;
+}
+.reviews{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.reviews h4{
+    font-size:25px;
+    font-weight:600;
+    position:relative;
+}
+.reviews h4::after{
+    position:absolute;
+    content:'';
+    height:3px;
+    background-color:#c92c2c;
+    width:150px;
+    left:0;
+    bottom:-5px;
+}
+.reviews tr{
+    border-bottom:2px solid #d7d7d7;
+}
+.reviews td{
+    vertical-align: top;
+    text-align: justify;
+    padding:10px 5px 20px;
+}
+.review-head{
+    display:flex;
+    justify-content: space-between;
+}
+.reviews button{
+    border: none;
+    width:100%;
+    font-size:20px;
+    font-weight:500;
+    padding:10px;
+    word-spacing:2px;
+}
+.reviews button:hover{
+    background-color:rgb(17, 79, 120);
+    color:white;
+}
+
+
+
+@media only screen and (max-width: 1396.36px){
+    .score::after{
+        width:425px;
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .main-content h1 {
+        font-size: 22px;
+    }
+    .movie-img {
+        height: 500px;
+    }
+    .content{
+        padding:10px !important;
+    }
+    .content span{
+        font-size:12px !important;
+    }
+    .score h5{
+        font-size:16px;
+    }
+    .score a{
+        font-size:14px;
+    }
+    .metascore{
+        font-size:18px;
+    }
+    .user-rating{
+        font-size:18px;
+    }
+    .score::after {
+        width: 356px;
+        left: 10px;
+    }
+    .rating h5{
+        font-size:1.1rem;
+    }
+    .rating span{
+        font-size:10px !important;
+    }
+    .rating .ur{
+        height:20px;
+        width:40px;
+    }
+    .btn{
+        font-size:14px !important;
+    }
+    .main-content .trailer button{
+        font-size:1rem;
+        padding:20px 30px;
+    }
+    .side ul.top li {
+        font-size: 18px;
+    }
+    .upcoming-movies h5{
+        font-size:18px;
+    }
+    .movie-title a{
+        font-size:16px;
+    }
+    .movie-title a:hover{
+        font-size:18px;
+    }  
+    .release-date p{
+        font-size:14px;
+    }
+    .single-movie-info {
+        padding: 10px 20px !important;
+    }
+    .single-movie-info h5{
+        padding-top:1rem !important;
+    }
+    .single-movie-info p{
+        margin-top:1.25rem;
+        font-size:15px;
+    }
+    .single-movie-info h6{
+        font-size:18px;
+    }
+    .reviews h4{
+        font-size:1.25rem;
+    }
+    .reviews h4::after{
+        width:110px;
+    }
+    .reviews h5{
+        font-size:1rem;
+    }
+    .reviews span{
+        font-size:15px;
+    }
+    .reviews p{
+        font-size:14px;
+    }
+    .reviews button{
+        font-size:16px;
+    }
+
+}
+@media only screen and (max-width:877.71px){
+    .banner {
+        padding: 4rem 0 1rem;
+    }
+    .img-add h6{
+        font-size:10px;
+    }
+    .main.container-fluid.py-3{
+        padding-top:0 !important;
+    }
+    .main-content .col-md-5 {
+        width: 35.666667% !important;
+    }
+    .movie-img {
+        height: 390px;
+    }
+    .main-content .col-md-7 {
+        flex: 0 0 auto;
+        width: 64.333333%;
+    }
+    .mt-4 {
+        margin-top: 1.5rem!important;
+    }
+    .main-content .trailer button {
+        font-size: 0.75rem;
+        padding: 12px 30px;
+    }
+    .main-content h1 {
+        font-size: 18px;
+    }
+    .content span {
+        font-size: 10px !important;
+    }
+    .score h5 {
+        font-size: 14px;
+    }
+    .score a {
+        font-size: 10px;
+    }
+    .metascore {
+        font-size: 18px;
+    }
+    .user-rating{
+        font-size:18px;
+    }
+    .score::after {
+        width: 440px;
+        left: 10px;
+    }
+    .rating h5 {
+        font-size: 14px;
+    }
+    textarea.form-control{
+        height:80px !important;
+        font-size:14px !important;
+    }
+    .single-movie-info h5 {
+        padding-top: 14px !important;
+    }
+    .single-movie-info h5::after{
+        height:2px;
+        bottom:-5px;
+    }
+    .single-movie-info p{
+        font-size:12px;
+    }
+    .single-movie-info h6 {
+        font-size: 14px;
+    }
+    .side.p-0{
+        margin-top:15px;
+    }
+    .side ul.top li {
+        font-size: 14px;
+        padding:8px;
+    }
+    .upcoming-movies h5 {
+        font-size: 14px;
+    }
+    .movie-title a{
+        font-size:12px;
+    }
+    .movie-title a:hover{
+        font-size:14px;
+    }
+    .release-date p {
+        font-size: 12px;
+    }
+    .ad{
+        display: none;
+    }
+    .reviews h4 {
+        font-size: 1rem;
+    }
+    .reviews h4::after{
+        height:2px;
+    }
+    .reviews span {
+        font-size: 12px;
+    }
+    .reviews p {
+        font-size: 12px;
+        margin:0;
+    }
+    .reviews button{
+        font-size:12px;
+        padding:8px;
+    }
+    .col-md-12.col-lg-6.user-reviews.ps-4{
+        margin-top:10px;
+        padding-left:0 !important;
+    }
+    
+    
+}
+@media only screen and (max-width:768px){
+    .main-content .col-md-5 {
+        width: 30.666667% !important;
+    }
+    .movie-img {
+        height: 300px;
+    }
+    .trailer.mt-4{
+        margin-top:15px !important;
+    }
+    .main-content .trailer button {
+        font-size: 12px;
+        padding: 8px 30px;
+    }
+    .main-content h1 {
+        font-size: 16px;
+    }
+    .content span {
+        font-size: 9px !important;
+        line-height:90% !important;
+    }
+    .score h5 {
+        font-size: 12px;
+    }
+    .score a {
+        font-size: 9px;
+    }
+    .metascore {
+        font-size: 14px;
+    }
+    .user-rating{
+        font-size:14px;
+    }
+    .metascore.green.mt-3 {
+        margin-top: 3px !important;
+    }
+    .user-rating.green.mt-3{
+        margin-top:3px !important;
+    }
+    .rating h5 {
+        font-size: 12px;
+    }
+    span.rating1.d-flex.mt-3 {
+        margin-top: 5px !important;
+    }
+    textarea.form-control {
+        height: 50px !important;
+        font-size: 10px !important;
+    }
+    button.btn {
+        font-size: 10px !important;
+        padding: 5px 0.75rem !important;
+    }
+    .single-movie-info h5 {
+        padding-top: 5px !important;
+        font-size:16px;
+    }
+    .single-movie-info p {
+        font-size: 10px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .single-movie-info h6 {
+        font-size: 11px;
+        margin-bottom: 3px !important;
+    }
+    .side ul.top li {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .upcoming-movies h5 {
+        font-size: 12px;
+    }
+    .movie-title a {
+        font-size: 10px;
+    }
+    .movie-title a:hover{
+        font-size:12px;
+    }
+    .release-date p {
+        font-size: 10px;
+        margin-bottom:2px !important;
+    }
+    .reviews h4 {
+        font-size: 14px;
+    }
+    .reviews h4::after {
+        width:75px;
+    }
+    .reviews td{
+        padding:10px 5px;
+    }
+    .reviews h5 {
+        font-size: 14px;
+    }
+    .reviews span {
+        font-size: 8px;
+    }
+    .reviews p {
+        font-size: 10px;
+    }
+    .reviews button {
+        font-size: 10px;
+        padding: 5px;
+    }  
+}
+@media only screen and (max-width:614.40px){
+    .banner {
+        padding: 2.2rem 0 1rem;
+    }
+    .img-add h6 {
+        font-size: 7px;
+    }
+    .score::after {
+        width: 330px;
+        left: 10px;
+    }
+    .main-content .col-md-5 {
+        width: 35.666667% !important;
+    }
+    .movie-img{
+        height:280px;
+    }
+    .main-content .trailer button {
+        font-size: 10px;
+    }
+    .main-content h1{
+        font-size:14px;
+    }    
+    .content span{
+        font-size:7px !important;
+    }
+    .score h5 {
+        font-size: 10px;
+    }
+    .score a {
+        font-size: 7px;
+    }
+    .metascore {
+        font-size: 12px;
+        border-radius:3px;
+    }
+    .user-rating{
+        font-size:12px;
+    }
+    .rating h5 {
+        font-size: 10px;
+    }
+    label.form-check-label {
+        font-size: 7px !important;
+    }    
+    textarea.form-control {
+        height: 40px !important;
+        font-size: 7px !important;
+    }
+    button.btn {
+        font-size: 7px !important;
+        padding: 3px 0.75rem !important;
+    }
+    .single-movie-info h5 {
+        font-size:14px;
+    }
+    .single-movie-info h5::after {
+        width:60px;
+    }
+    .single-movie-info p{
+        font-size:8px;
+    }
+    .single-movie-info h6{
+        font-size:10px;
+    }
+    .side ul.top li{
+        font-size:10px;
+    }
+    .upcoming-movies h5 {
+        font-size: 10px;
+    }
+    .movie-title a {
+        font-size: 8px;
+    }
+    .movie-title a:hover {
+        font-size: 10px;
+    }
+    .release-date p{
+        font-size:8px;
+    }
+    .reviews h4 {
+        font-size: 12px;
+    }
+    table.mt-4{
+        margin-top:10px !important;
+    }
+    .reviews h5 {
+        font-size: 12px;
+    }
+    .reviews p {
+        font-size: 8px;
+    }
+    .reviews tr {
+        border-bottom-width: 1px;
+    }
+    .reviews button {
+        font-size: 8px;
+        padding: 4px;
+    }
+    
+    
+    
+}

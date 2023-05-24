@@ -1,0 +1,240 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.main{
+    padding-top:6.5rem;
+}
+.main h3{
+    font-weight:700;
+    color:rgb(17, 79, 120);
+}
+#upcoming-movies-list caption{
+    text-transform: uppercase;
+    color:black !important;
+    text-align:center !important;
+}
+#upcoming-movies-list tr td{
+    padding:15px 10px;
+    font-size:15px;
+    font-weight:500;
+    color:#454545;
+    height:20px;
+}
+#upcoming-movies-list a{
+    text-decoration:none;
+    color:#454545;
+}
+.col-md-2.pe-0.lang {
+    width: 11%;
+}
+.first-look{
+    position:relative;
+}
+.look-slider{
+    padding-left:38px;
+}
+.first-look  .slick-arrow{
+    position:absolute;
+    top:5%;
+    z-index:1;
+}
+.first-look-img{
+    height:480px;
+    width:360px;
+}
+.first-look-img img{
+    width:100%;
+    height:100%;
+}
+.first-look .slick-prev{
+    left:75%;
+}
+.first-look .slick-next{
+    right:12%;
+}
+.slick-prev:before {
+    color: red !important;
+    font-size: 30px !important;
+}
+.slick-next:before{
+    color:red !important;
+    font-size:30px !important;
+}
+
+
+
+
+
+@media only screen and (max-width: 1396.36px){
+    .main .col-md-5 {
+        flex: 0 0 auto;
+        width: 46.666667%;
+    }
+    .main .col-md-2 {
+       width: 18.666667%;
+    }
+    .col-md-2.pe-0.lang {
+        width: 12%;
+    }
+    .first-look .slick-next {
+        right: 5%;
+    }
+    .first-look .slick-prev {
+        left: 82%;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .main .col-md-5 {
+        width: 55.666667%
+    }
+    .main .col-md-2 {
+        width: 19.666667%;
+    }
+    .main h3{
+        font-size:1.25rem;
+    }
+    .main p{
+        font-size:16px !important;
+    }
+    .col-md-2.pe-0.lang {
+        width: 13%;
+    }
+    #upcoming-movies-list label {
+        font-size: 14px !important;
+    }
+    .form-select-sm {
+        font-size: 0.575rem !important;
+    }
+    .table th{
+        font-size:14px !important;
+    }
+    #upcoming-movies-list tr td {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+    .first-look-img {
+        height: 380px;
+        width: 282px;
+    }
+    .first-look .slick-next {
+        right: 5%;
+    }
+    .first-look .slick-prev {
+        left: 79%;
+    }
+    .slick-prev:before {
+        font-size: 25px !important;
+    }
+    .slick-next:before{
+        font-size:25px !important;
+    }
+}
+@media only screen and (max-width: 877.71px){
+    .main{
+        padding-top:5.2rem;
+    }
+    .main h3{
+        font-size:18px;
+    }
+    .row.justify-content-start.descrition.pt-3 {
+        padding-top: 0.25rem !important;
+    }    
+    .main p {
+        font-size: 12px !important;
+    } 
+    div#upcoming-movies-list {
+        margin-top: 0.5rem !important;
+    }
+    #upcoming-movies-list label {
+        font-size: 12px !important;
+        vertical-align: top!important;
+
+    }
+    .main .col-md-2 {
+        width: 22.666667%;
+        vertical-align: text-top!important;
+    }
+    .form-select-sm {
+        font-size: 0.475rem !important;
+        vertical-align: top!important;
+        background:10px 10px !important;
+
+    }
+    .col-md-2.pe-0.lang {
+        width: 15%;
+    }
+    .table th {
+        font-size: 12px !important;
+    }
+    #upcoming-movies-list tr td {
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .row.ps-4 {
+        padding-left:0 !important;
+    }
+    .look-slider {
+        padding-left: 15px;
+    }
+    .first-look-img {
+        height: 301px;
+        width: 224px;
+    }
+    .first-look .slick-prev {
+        left: 76%;
+    }      
+}
+@media only screen and (max-width:768px){
+    .main{
+        padding-top:3.5rem;
+    }
+    .slick-prev:before {
+        font-size: 20px !important;
+    }
+    .slick-next:before {
+        font-size: 20px !important;
+    }
+}
+@media only screen and (max-width: 614.40px){
+    .main{  
+        padding-top: 3.2rem;
+        }
+    .main h3 {
+        font-size: 14px;
+    }
+    .main p {
+        font-size: 10px !important;
+    }
+    .main .col-md-2 {
+        width: 18.666667%;
+    }
+    #upcoming-movies-list label {
+        font-size: 10px !important;
+    }
+    .form-select-sm{
+        padding:2px 5px!important;
+        background-size: 8px 8px !important;
+    }
+    .col-md-2.pe-0.lang {
+        width: 11%;
+    }
+    .table th {
+        font-size: 10px !important;
+    }
+    #upcoming-movies-list tr td {
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .first-look .slick-prev {
+        left: 15px;
+    }
+    .first-look .slick-next {
+        right: 7%;
+    }
+    .slick-prev:before {
+        font-size: 15px !important;
+    }
+    .slick-next:before {
+        font-size: 15px !important;
+    }
+}

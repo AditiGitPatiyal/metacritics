@@ -1,0 +1,226 @@
+footer{
+    font-family:'Lato',sans-serif;
+}
+footer ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+}
+footer ul li a:hover{
+    color:#c92c2c;
+}
+.footer-content{
+    color:white;
+}
+.footer-content ul li.active a{
+    color:#c92c2c;
+}
+.contact li{
+    font-size:20px;
+}
+.footer-content i{
+    font-size:19px;
+    font-weight:600;
+}
+.footer-content h4{
+    font-weight:600;
+    letter-spacing:1px;
+}
+.newsletter p{
+    font-size:20px;
+}
+.newsletter .form-control{
+    background-color:transparent;
+    width:70%;  
+}
+.newsletter button{
+    background-color:#c92c2c;
+    border:none;
+    border-radius:4px;
+    padding:10px 12px;
+    color:white;
+    font-weight:500;
+    margin-left:25px;
+}
+.newsletter button:hover{
+    background-color:white;
+    color:#c92c2c;
+}
+.newsletter h5{
+    font-weight:600;
+    letter-spacing:1px;
+    word-spacing:3px;
+}
+.follow{
+    width:23%;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    .footer-content h4{
+        font-size:20px;
+    }
+    .contact li {
+        font-size: 15px;
+    }
+    footer ul li a {
+        font-size: 16px;
+    }
+    .newsletter p {
+        font-size: 16px;
+    }
+    .newsletter button {
+        padding: 8px 5px;
+        margin-left: 7px;
+        font-size:12px;
+    }
+    .rights p{
+        font-size:15px;
+    }
+    .rights ul li a{
+        font-size:14px;
+    }
+    .follow h5{
+        font-size:16px;
+    }
+}
+@media only screen and (max-width: 877.71px){
+    .footer-content.container.pt-5{
+        padding-top:2rem !important;
+    }
+    .footer-content img{
+        width:30%;
+    }
+    .footer-content i {
+        font-size: 14px;
+    }
+    .contact li {
+        font-size: 14px;
+    }
+    .footer-content h4 {
+        font-size: 16px;
+    }
+    footer ul li a {
+        font-size: 14px;
+    }
+    footer .pb-3{
+        padding-bottom:0.50rem !important;
+    }
+    footer .pt-4 {
+        padding-top: 1rem!important;
+    }
+    .newsletter p {
+        font-size: 14px;
+    }
+    .newsletter button {
+        padding: 8px 12px;
+        margin-left: 7px;
+        font-size: 10px;
+    }
+    .follow{
+        width:47%;
+    }
+    .follow h5 {
+        font-size: 14px;
+    }
+    .follow img{
+        width:80%;
+    }
+    .rights p {
+        font-size: 11px;
+    }
+    .rights ul li a {
+        font-size: 10px;
+    }
+    
+    
+}
+@media only screen and (max-width:768px){
+    .footer-content img {
+        width: 25%;
+    }
+    .footer-content h4 {
+        font-size: 14px;
+    }
+    .contact li {
+        font-size: 12px;
+    }
+    .footer-content i {
+        font-size: 12px;
+    }
+    footer ul li a {
+        font-size: 12px;
+    }
+    footer .pb-3 {
+        padding-bottom: 0.1rem !important;
+    }
+    .newsletter p {
+        font-size: 12px;
+    }
+    footer .form-control{
+        height:25px !important;
+        font-size:12px !important;
+    }
+    .newsletter button{
+        padding:5px 12px;
+    }
+    .follow h5 {
+        font-size: 12px;
+    }
+    .follow img{
+        width:70%;
+    }
+    
+}
+@media only screen and (max-width:614.40px){
+    .footer-content h4 {
+        font-size: 12px;
+    }
+    .footer-content span{
+        border-bottom-width:2px !important ;
+    }
+    .contact li {
+        font-size: 10px;
+    }
+    .contact i {
+        font-size: 8px;
+    }
+    footer ul li a {
+        font-size: 10px;
+    }
+    footer .pt-4{
+        padding-top:5px !important;
+    }
+    footer .pb-3{
+        padding-bottom:0 !important;
+        line-height:20px !important;
+    }
+    .newsletter p {
+        font-size: 10px;
+    }
+    footer .form-control {
+        height: 20px !important;
+        font-size: 10px !important;
+    }
+    .newsletter button{
+        font-size:8px;
+        padding:4px 10px;
+    }
+    h5.pt-3{
+        padding-top:5px !important;
+        font-size:10px;
+    }
+    .follow img {
+        width: 60%;
+    }
+    .rights p {
+        font-size: 8px;
+    }
+    .rights ul li a{
+        font-size:10px;
+        vertical-align: top;
+    }
+}
+
+

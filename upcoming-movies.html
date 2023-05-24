@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies-Upcoming-Movies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/upcoming-movies.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <header class="container-fluid fixed-top" style="background-color:rgb(17, 79, 120)">
+            <nav class="navbar main-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="images/logo1.png" class="img-fluid logo" alt="Logo">
+                    </a>
+                    <div class="search">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <form>
+                                <div class="search d-flex">
+                                    <input type="search"name="search" id="search" class="form-control" placeholder="Search....">
+                                    <span class="search-btn"><button type="submit" style="border:none;"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                                </div>   
+                            </form>    
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div class="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="home.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="movies.html" role="button">MOVIES</a>  
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="webseries.html" role="button">WEB SERIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">ABOUT US</a>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="login-register">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <span data-bs-toggle="modal" data-bs-target="#login-modal" >
+                                    <a class="nav-link">LOGIN</a>
+                                </span>
+                            </li>
+                            <li class="nav-item"><a class="nav-link">|</a></li>
+                            <li class="nav-item">
+                                <span data-bs-toggle="modal" data-bs-target="#register-modal">
+                                   <a class="nav-link">SIGNUP</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="modal" id="login-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h1 class="modal-title"><span style="border-bottom:3px solid red">LOG</span>IN</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3 mt-3">
+                          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="form-floating mt-3 mb-3">
+                          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                          <label for="pwd">Password</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="check1" name="remember-me" value="something">
+                            <label class="form-check-label" for="check1">Remember me</label>
+                        </div>
+                        <div class="mb-1">
+                        <button type="submit" class="btn">LOGIN</button>
+                        </div>
+                    </form>
+                        <div class="mb-1 forgot-password">
+                        <a href="#" class="text-primary">Forgot password ?</a>
+                        </div>
+                        <p class="text-muted pb-4">Don't have any account yet?<span data-bs-toggle="modal" data-bs-target="#register-modal" style="color:rgb(17, 79, 120);"><strong>Signup Now</strong></span></p>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="register-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h1 class="modal-title"><span style="border-bottom:3px solid red;">SIGN</span>UP</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+        
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-floating mb-3 mt-3">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-floating mb-3 mt-3">
+                              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="form-floating mt-3 mb-3">
+                              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                              <label for="pwd">Password</label>
+                            </div>
+                            <div class="form-floating mt-3 mb-3">
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                                <label for="pwd">Re-type Password</label>
+                              </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="check1" name="remember-me" value="something">
+                                <label class="form-check-label" for="check1">Remember me</label>
+                            </div>
+                            <div class="mb-1">
+                            <button type="submit" class="btn">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+             </div>
+        </div>
+        </div>
+        <!--UPCOMING MOVIES LIST-->
+        <div class="main container-fluid">
+            <div class="container">
+            <div class="row pb-3">
+            <div class="col-md-8 col-sm-12">
+            <div class="row justify-content-start">
+                <div class="col-md-5">
+                    <h3><span style="border-bottom:0.1em solid #c92c2c;">UPCOMING MOV</span>IES</h3>
+                </div>
+            </div>
+            <div class="row justify-content-start descrition pt-3">
+                <div class="col-md-12">
+                    <p style="text-align:left;font-size:20px;"><strong>New Upcoming  Movies 2023 </strong>- Your one-stop destination to know all about the current and upcoming movies releases.Here's a regularly updated list of  movie release dates, upcoming movies, latest Bollywood movies,Punjabi movies and English movies 2023 and a lot more film.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3" id="upcoming-movies-list">
+                <div class="col-md-12">
+                    <div class="row">
+                    <div class="col-md-2 pe-0">
+                    <label><b>Movies Per Page:</b></label>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <select class="form-select form-select-sm" width="10%">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>ALL</option>
+                          </select>      
+                    </div>
+                    <div class="col-md-2 pe-0 lang">
+                        <label><b>Language:</b></label>
+                    </div>
+                    <div class="col-md-2 p-0">
+                        <select class="form-select form-select-sm" width="10%">
+                            <option>All</option>
+                            <option>Hindi</option>
+                            <option>Punjabi</option>
+                            <option>English</option>
+                          </select>      
+                    </div>
+                    </div>
+                    <table width="100%" class="table table-striped mt-3">
+                     <thead>
+                        <tr>
+                        <th width="35%">RELEASE DATE</th>
+                        <th width="40%">NAME</th>
+                        <th width="25%">LANGUAGE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><a href="#">
+                            <td>16 June 2023</td>
+                            <td><a href="#">Adipurush</a></td>
+                            <td>Hindi</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>16 June 2023</td>
+                            <td><a href="#">Extraction 2</a></td>
+                            <td>English</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>23 June 2023</td>
+                            <td><a href="#">Maidaan</a></td>
+                            <td>Hindi</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>23 June 2023</td>
+                            <td><a href="#">Minimun</a></td>
+                            <td>Hindi</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>29 June 2023</td>
+                            <td><a href="#">Carry On Jatta</a></td>
+                            <td>punjabi</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>29 June 2023</td>
+                            <td><a href="#">Satya Prem Ki Katha</a></td>
+                            <td>Hindi</td>
+                            </a>
+                        </tr>
+                        <tr><a href="#">
+                            <td>30 June 2023</td>
+                            <td><a href="#">1922 Pratikaar Chauri Chaura</a></td>
+                            <td>Hindi</td>
+                            </a>
+                        </tr>      
+                    </tbody>
+                </table>
+                </div>    
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="first-look">
+                    <div class="row ps-4">
+                        <div class="col-md-12">
+                        <h3>First Look<i class="fa-solid fa-arrow-right ps-2"></i></h3>
+                        </div>
+                    </div>
+                    <div class="row mt-2 look-slider">
+                        <div class="col-md-12">
+                            <div class="first-look-img"><a href="#"><img src="images/rockey-aur-rani-ki-kahani.jpg" height="500px" width="360px"></a></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="first-look-img"><a href="#"><img src="images/Suspects.jpeg" height="500px" width="360px"></a></div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="first-look-img"><a href="#"><img src="images/thor-love-and-thunder.jpg" height="500px" width="360px"></a></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
+        </div>
+        <footer style="background-image: url(images/slider-bg2.jpg);">
+            <div class="footer-content container pt-5">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <a href="home.html"><img src=images/logo1.png></a>
+                        <ul class="list-unstyled pt-3 contact">
+                            <li class="pb-3"><i class="fa-solid fa-phone pe-3"></i>+91 98988-89899</li>
+                            <li class="pb-3"><i class="fa-regular fa-envelope pe-3"></i> example@gamil.com</li>
+                            <li class="pb-3"><i class="fa-regular fa-globe pe-3"></i>www.blockbuster.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4><span style="border-bottom:3px solid #c92c2c;">MOVI</span>ES</h4>
+                        <ul class="list-unstyled pt-4">
+                            <li class="pb-3"><a href="upcoming-movies.html">Up-Coming Movies</a></li>
+                            <li class="pb-3"><a href="MoviesInThreater.html">Movies In Threater Now</a></li>
+                            <li class="pb-3"><a href="movies.html">Movies By Genre</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <h4><span style="border-bottom:3px solid #c92c2c;">WEB SER</span>IES</h4>
+                        <ul class="list-unstyled pt-4">
+                            <li class="pb-3"><a href="upcoming-webseries.html">Up-Coming Web Series</a></li>
+                            <li class="pb-3"><a href="#">Popular Web Series </a></li>
+                            <li class="pb-3"><a href="webseries.html">Web Series By Genre</a></li>
+                            <li class="pb-3"><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 newsletter">
+                        <h4><span style="border-bottom:3px solid #c92c2c;">NEWSLE</span>TTER</h4>
+                        <p class="pt-4">Subscribe to our newsletter system now to get latest news from us.
+                        </p>
+                        <form class="d-flex">
+                            <input type="email" class="form-control form-control" placeholder="Enter your email....">
+                            <button>SUBMIT</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 d-flex justify-content-between">
+                        <ul class="list-unstyled  help d-flex">
+                            <li class="pe-2"><a href="#">Help</a></li>
+                            <li>|</li>
+                            <li class="ps-2"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                        <div class="follow">
+                            <h5 class="pt-3">FOLLOW US ON</h5>
+                            <ul class="list-unstyled d-flex">
+                                <li class="pe-2"><img src="images/fb.png"></li>
+                                <li class="pe-2"><img src="images/google.png"></li>
+                                <li class="pe-2"><img src="images/twiiter.png"></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-between rights">
+                    <hr>
+                    <div class="col-sm-6">
+                        <p>@2023 All Rights Reserved by Block Buster A Film Review Website  </p>   
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+
+        
+
+
+
+        <script type="text/javascript">
+            $('.look-slider').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                responsive: [
+                         {
+                        breakpoint: 1024,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        }
+                        },
+                        {
+                        breakpoint:877.71,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        }
+                        
+                        },
+                        {
+                        breakpoint: 614.40,
+                        settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                         }
+                         },
+                         {
+                         breakpoint: 480,
+                         settings: {
+                         slidesToShow: 1,
+                         slidesToScroll: 1
+                         }
+                         }
+                         ]
+                 });
+        </script>
+ 
+        
+
+    </body>
+</html>
